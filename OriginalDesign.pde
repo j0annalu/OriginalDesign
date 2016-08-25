@@ -1,7 +1,7 @@
-int x1 = 100;
-int y1 = 175;
-int x2 = 25;
-int y2 = 125;
+int x1;
+int y1;
+int x2;
+int y2;
 
 void setup()
 {
@@ -25,6 +25,9 @@ void body()
 	noStroke();
 	fill(136,69,19);
 	ellipse(100,100, 150, 175);stroke(255,255,255,100);
+	fill(205,175,149);
+	ellipse(65,150,25,50);
+	ellipse(135, 150, 25, 50);
 }
 
 void ears()
@@ -56,11 +59,12 @@ void spikes()
 {
 	stroke(255,255,255,100);
 	line(x1,y1,x2,y2);
-	x2 = x2 +10;
-    y2 = y2 -30;
-    if (y2 < 10){
-    	y2 = y2 +30;
-    }
+	x1 = (int) (Math.random()*140) + 20;
+	y1 = (int) (Math.random()*160) + 10;
+	x2 = (int) (Math.random()*140) + 20;
+	y2 = (int) (Math.random()*50) + 100;
+
+
 }
 
 void mousePressed()
