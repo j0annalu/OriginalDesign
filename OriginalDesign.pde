@@ -59,10 +59,10 @@ void spikes()
 {
 	stroke(255,255,255,100);
 	line(x1,y1,x2,y2);
-	x1 = (int) (Math.random()*140) + 20;
-	y1 = (int) (Math.random()*160) + 10;
-	x2 = (int) (Math.random()*140) + 20;
-	y2 = (int) (Math.random()*50) + 100;
+	x1 = (int) (Math.random()*150) + 20;
+	y1 = (int) (Math.random()*170) + 10;
+	x2 = (int) (Math.random()*150) + 20;
+	y2 = (int) (Math.random()*170) + 10;
 
 
 }
